@@ -109,9 +109,7 @@ def editPost(id):
         post_id.title = request.form['title']
         post_id.Content = request.form['Content']
         post_id.Author = request.form['Author']
-
         db.session.commit()
-
         return redirect('/posts')
 
 
